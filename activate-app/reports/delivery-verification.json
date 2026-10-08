@@ -1,0 +1,126 @@
+{
+  "verifiedUtc": "2026-09-06T01:34:00.431485+00:00",
+  "delivered": true,
+  "standaloneExe": "D:\\Project\\unlock\\Activate.exe",
+  "sourceProject": "D:\\Project\\unlock\\activate-app",
+  "exeBytes": 177152,
+  "exeSha256": "5729ac1596fc2f1a5e2d6ef2b7f796385de34533fdefc651162c0b13bfafd42c",
+  "originalFileCount": 36,
+  "originalUnchanged": true,
+  "zipAndActualExePayloadMatchOriginal": true,
+  "integrationPassed": 31,
+  "integrationFailed": 0,
+  "actualExeUiVerified": true,
+  "uiProductsVerified": 9,
+  "runtimeAuthorizationVerified": false,
+  "files": {
+    "Activate.Desktop.csproj": {
+      "bytes": 1699,
+      "sha256": "7751fbf7925eb1c3cd1a871d2d42f7dadea8b1a04953d5488360bbcf37f0614f"
+    },
+    "README.md": {
+      "bytes": 5143,
+      "sha256": "75ca3b4c948aecddd3c0ff94c5cadf3321160d5419e654f1aaa8a7bfbdf353c5"
+    },
+    "build.ps1": {
+      "bytes": 2437,
+      "sha256": "147b3d0ee627c8e8f26e8a9761d636e6498fe02020a9298ae0b4386e1a34a5aa"
+    },
+    "dist/Activate.Tests.exe": {
+      "bytes": 161792,
+      "sha256": "88fd33d15199561d51dcd3253f6b5553a060947ffb4fe29ba6b4fad0216ba906"
+    },
+    "dist/Activate.UiSmoke.exe": {
+      "bytes": 15872,
+      "sha256": "63ad6246171b1dcd8b7b75f9b95e336f2f8769217628368dfd8e5b6fe0827893"
+    },
+    "dist/Activate.exe": {
+      "bytes": 177152,
+      "sha256": "5729ac1596fc2f1a5e2d6ef2b7f796385de34533fdefc651162c0b13bfafd42c"
+    },
+    "reports/integration-tests.json": {
+      "bytes": 2550,
+      "sha256": "ce9af11d88930626270224349fe16224969971ddffe0892f15fc1ab5b612942a"
+    },
+    "reports/integration-tests.log": {
+      "bytes": 1320,
+      "sha256": "f4d39758cc8174f6c9a3a35464ca3d489a0e8bc2d76e87349509fe6d2f8b8f3f"
+    },
+    "reports/ui-preview.png": {
+      "bytes": 40090,
+      "sha256": "d05997d169e0a8f81d6ed498fe675befa33ee685e243865223ebd804abe0bd7c"
+    },
+    "reports/ui-smoke.json": {
+      "bytes": 4190,
+      "sha256": "dd355da84b25515fdf6473fd9c827a8090ef9f4b504af55f2af82402d41c7b0e"
+    },
+    "reports/ui-verification.json": {
+      "bytes": 547,
+      "sha256": "9c1d52df40fa0588e4cff556088e9c809209a9c81e84b0bcf92e607bcc8b1fd5"
+    },
+    "resources/activate.ico": {
+      "bytes": 3467,
+      "sha256": "7602f7f2eca2569abfa2dae7212e872a199ad9463d3b57df9e70e23b59828544"
+    },
+    "resources/app.manifest": {
+      "bytes": 979,
+      "sha256": "7fb7da5e05486a8bfb0a4aee3cd31829fd88bd5a0c3dada504f04be7e827fbc0"
+    },
+    "resources/payload.manifest.json": {
+      "bytes": 3295,
+      "sha256": "0f9fe43f9b7e04f6b9dc955cdc87bd7460ce6bfdc3c0f9f444c00a4a7360cea5"
+    },
+    "resources/payload.zip": {
+      "bytes": 105899,
+      "sha256": "f6086607ec6cb57305737e2911996d0743641905e4b5000ac1950e891720a150"
+    },
+    "src/App.cs": {
+      "bytes": 13575,
+      "sha256": "5009d510c934dfafb2a5b38d8486e47fcb11f655ad2cbfd8f4218a2d5ad23a24"
+    },
+    "src/AssemblyInfo.cs": {
+      "bytes": 378,
+      "sha256": "7786ea7fe37cba34003e82c05ff6e53ac67cc10f96c2d7ec4665095c03872c51"
+    },
+    "src/Deployment.cs": {
+      "bytes": 15805,
+      "sha256": "5b494aabc42667849e3f851936fcdff420595ec7ff049e886037bcc05538c420"
+    },
+    "src/MainWindow.xaml": {
+      "bytes": 11288,
+      "sha256": "afae2046b6a408df71dadfab24798cd572b482bd9b578a7725ed26760af82cfb"
+    },
+    "src/Models.cs": {
+      "bytes": 15472,
+      "sha256": "2b5a21a0c39988c1f1c6ded7362e0a5900e05a77acfaf08ab71c4bacb44084af"
+    },
+    "src/Payload.cs": {
+      "bytes": 4540,
+      "sha256": "58902260bc552d9a3d921a5712ce67714d9e81492453b115c410faf1e7866ea3"
+    },
+    "tests/IntegrationTests.cs": {
+      "bytes": 14238,
+      "sha256": "b15acb8d5148ac5ee9aaa0439773c57fead0088983dd7245b503183856e65acd"
+    },
+    "tests/UiSmoke.cs": {
+      "bytes": 5063,
+      "sha256": "5d88e3693b4ecd565ef31c90e6d8f4a4688b9cf880250e8244b4ea7d67f136f6"
+    },
+    "tools/make_icon.ps1": {
+      "bytes": 2091,
+      "sha256": "bdbeed80dd966d5d92a9062ca9e69ff4c649a655c8f094bbe7f3f3f130873a8b"
+    },
+    "tools/prepare_payload.py": {
+      "bytes": 1243,
+      "sha256": "1400cb70c68032d16fab6830e46ef4f54c8d4374c50467157ad55b5a64945019"
+    },
+    "tools/run_tests.py": {
+      "bytes": 701,
+      "sha256": "7ce8bf3df348eb6bc50c33235d08afb668801f5d9e137ac911688006c469f4f5"
+    },
+    "tools/test_ui.ps1": {
+      "bytes": 779,
+      "sha256": "714ba48aea48b4453d6b09a6915e89cf9a28c3231090016ca3361c7fe16a4882"
+    }
+  }
+}

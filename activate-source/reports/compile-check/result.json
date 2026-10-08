@@ -1,0 +1,15 @@
+{
+  "jdk": "D:\\Java\\jdk-25.0.4.1",
+  "command": [
+    "D:\\Java\\jdk-25.0.4.1\\bin\\javac.exe",
+    "-J-Duser.language=en",
+    "-J-Duser.country=US",
+    "@D:\\Project\\unlock\\activate-source\\reports\\compile-check\\javac.args"
+  ],
+  "exit_code": 1,
+  "source_count": 48,
+  "compiled_class_count": 0,
+  "target_bytecode": "current JDK default; not the original Java 8 target",
+  "agent_or_scripts_executed": false,
+  "runtime_behavior_verified": false
+}

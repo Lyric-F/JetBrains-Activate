@@ -1,0 +1,34 @@
+TEST_ROOT=C:\Users\57878\AppData\Local\Temp\ActivateDesktop-tests\20260906-012834-13683485d0424deaaa2f752aacac731c
+PASS original-script-idea
+PASS license-info-idea
+PASS original-script-pycharm
+PASS license-info-pycharm
+PASS original-script-webstorm
+PASS license-info-webstorm
+PASS original-script-phpstorm
+PASS license-info-phpstorm
+PASS original-script-goland
+PASS license-info-goland
+PASS original-script-clion
+PASS license-info-clion
+PASS original-script-datagrip
+PASS license-info-datagrip
+PASS original-script-dataspell
+PASS license-info-dataspell
+PASS original-script-rider
+PASS license-info-rider
+PASS no-target-does-not-touch-profile
+PASS false-success-rolls-back
+PASS partial-failure-rolls-back
+PASS cancel-after-write-rolls-back
+PASS pre-canceled-does-not-touch-profile
+PASS restore-protects-later-user-edit
+PASS reapply-restores-one-transaction-at-a-time
+PASS installation-metadata-and-version-order
+PASS temp-path-guard
+PASS first-install-restores-absent-files
+PASS unconfirmed-process-exit-preserves-recovery-material
+PASS damaged-backup-does-not-overwrite-current-files
+PASS real-wscript-cancel-terminates-child-and-restores
+RESULTS=C:\Users\57878\AppData\Local\Temp\activate-app-work-20260905\reports\integration-tests.json
+Passed 31/31

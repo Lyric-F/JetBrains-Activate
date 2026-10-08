@@ -1,0 +1,2 @@
+这是删掉激活的方法：找到这个地址，把JetBrains文件夹删掉，或者对JetBrains直接重命名也行，重启软件。
+C:\Users\【当前系统用户名】\AppData\Roaming\JetBrains\

@@ -1,0 +1,94 @@
+{
+  "verified_utc": "2026-09-05T12:37:12.544698+00:00",
+  "original_files": 36,
+  "original_unchanged": true,
+  "original_snapshot_identical": true,
+  "java_source_files": 48,
+  "original_class_files": 53,
+  "compiled_class_files": 53,
+  "compiled_class_names_match_original": true,
+  "compiled_bytecode_major_versions": [
+    65
+  ],
+  "missing_compiled_classes": [],
+  "unexpected_compiled_classes": [],
+  "resource_copy_errors": [],
+  "cfr_exit_codes": {
+    "core": 0,
+    "dns": 0,
+    "hideme": 0,
+    "power": 0,
+    "url": 0
+  },
+  "decompiler_warnings": [
+    {
+      "path": "modules/core/src/main/java/com/janetfilter/core/Dispatcher.java",
+      "line": 33,
+      "message": "WARNING - Removed try catching itself - possible behaviour change."
+    },
+    {
+      "path": "modules/core/src/main/java/com/janetfilter/core/plugin/PluginManager.java",
+      "line": 70,
+      "message": "WARNING - Removed try catching itself - possible behaviour change."
+    },
+    {
+      "path": "modules/dns/src/main/java/com/janetfilter/plugins/dns/InetAddressTransformer.java",
+      "line": 4,
+      "message": "Could not load the following classes:"
+    },
+    {
+      "path": "modules/hideme/src/main/java/com/janetfilter/plugins/hideme/ClassNameTransformer.java",
+      "line": 4,
+      "message": "Could not load the following classes:"
+    },
+    {
+      "path": "modules/hideme/src/main/java/com/janetfilter/plugins/hideme/VMTransformer.java",
+      "line": 4,
+      "message": "Could not load the following classes:"
+    },
+    {
+      "path": "modules/power/src/main/java/com/janetfilter/plugins/power/ArgsTransformer.java",
+      "line": 4,
+      "message": "Could not load the following classes:"
+    },
+    {
+      "path": "modules/power/src/main/java/com/janetfilter/plugins/power/GoForFreeTransformer.java",
+      "line": 4,
+      "message": "Could not load the following classes:"
+    },
+    {
+      "path": "modules/power/src/main/java/com/janetfilter/plugins/power/ResultTransformer.java",
+      "line": 4,
+      "message": "Could not load the following classes:"
+    },
+    {
+      "path": "modules/url/src/main/java/com/janetfilter/plugins/url/HttpClientTransformer.java",
+      "line": 4,
+      "message": "Could not load the following classes:"
+    }
+  ],
+  "failed_decompilation_markers": [],
+  "compile_check": {
+    "command": [
+      "D:\\Java\\jdk-25.0.4.1\\bin\\javac.exe",
+      "-J-Duser.language=en",
+      "-J-Duser.country=US",
+      "@D:\\Project\\unlock\\activate-source\\reports\\compile-check-jbr21\\javac.args"
+    ],
+    "exit_code": 0,
+    "compiler": "JDK 25.0.4.1",
+    "system_modules": "JetBrains Runtime 21.0.8",
+    "source_count": 48,
+    "compiled_class_count": 53,
+    "target_bytecode": 21,
+    "source_modified": false,
+    "target_code_executed": false,
+    "runtime_behavior_verified": false
+  },
+  "original_java_8_build_reproduced": false,
+  "byte_for_byte_jar_rebuild_verified": false,
+  "runtime_semantic_equivalence_verified": false,
+  "activation_executed": false,
+  "manual_changes_to_java_sources": false,
+  "broken_local_document_links": []
+}

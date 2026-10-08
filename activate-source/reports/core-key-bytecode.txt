@@ -1,0 +1,531 @@
+Compiled from "Dispatcher.java"
+public final class com.janetfilter.core.Dispatcher implements java.lang.instrument.ClassFileTransformer {
+  private final com.janetfilter.core.Environment environment;
+    descriptor: Lcom/janetfilter/core/Environment;
+
+  private final java.util.Set<java.lang.String> classSet;
+    descriptor: Ljava/util/Set;
+
+  private final java.util.Map<java.lang.String, java.util.List<com.janetfilter.core.plugin.MyTransformer>> transformerMap;
+    descriptor: Ljava/util/Map;
+
+  private final java.util.List<com.janetfilter.core.plugin.MyTransformer> globalTransformers;
+    descriptor: Ljava/util/List;
+
+  private final java.util.List<com.janetfilter.core.plugin.MyTransformer> manageTransformers;
+    descriptor: Ljava/util/List;
+
+  public com.janetfilter.core.Dispatcher(com.janetfilter.core.Environment);
+    descriptor: (Lcom/janetfilter/core/Environment;)V
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #2                  // class java/util/TreeSet
+         8: dup
+         9: invokespecial #3                  // Method java/util/TreeSet."<init>":()V
+        12: putfield      #4                  // Field classSet:Ljava/util/Set;
+        15: aload_0
+        16: new           #5                  // class java/util/HashMap
+        19: dup
+        20: invokespecial #6                  // Method java/util/HashMap."<init>":()V
+        23: putfield      #7                  // Field transformerMap:Ljava/util/Map;
+        26: aload_0
+        27: new           #8                  // class java/util/ArrayList
+        30: dup
+        31: invokespecial #9                  // Method java/util/ArrayList."<init>":()V
+        34: putfield      #10                 // Field globalTransformers:Ljava/util/List;
+        37: aload_0
+        38: new           #8                  // class java/util/ArrayList
+        41: dup
+        42: invokespecial #9                  // Method java/util/ArrayList."<init>":()V
+        45: putfield      #11                 // Field manageTransformers:Ljava/util/List;
+        48: aload_0
+        49: aload_1
+        50: putfield      #12                 // Field environment:Lcom/janetfilter/core/Environment;
+        53: return
+
+  public void addTransformer(com.janetfilter.core.plugin.MyTransformer);
+    descriptor: (Lcom/janetfilter/core/plugin/MyTransformer;)V
+    Code:
+         0: aconst_null
+         1: aload_1
+         2: if_acmpne     6
+         5: return
+         6: aload_0
+         7: getfield      #12                 // Field environment:Lcom/janetfilter/core/Environment;
+        10: invokevirtual #13                 // Method com/janetfilter/core/Environment.isAttachMode:()Z
+        13: ifeq          59
+        16: aload_1
+        17: invokeinterface #14,  1           // InterfaceMethod com/janetfilter/core/plugin/MyTransformer.attachMode:()Z
+        22: ifne          59
+        25: new           #15                 // class java/lang/StringBuilder
+        28: dup
+        29: invokespecial #16                 // Method java/lang/StringBuilder."<init>":()V
+        32: ldc           #17                 // String Transformer:
+        34: invokevirtual #18                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        37: aload_1
+        38: invokevirtual #19                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        41: invokevirtual #20                 // Method java/lang/Class.getName:()Ljava/lang/String;
+        44: invokevirtual #18                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        47: ldc           #21                 // String  is set to not load in attach mode, ignored.
+        49: invokevirtual #18                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        52: invokevirtual #22                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        55: invokestatic  #23                 // Method com/janetfilter/core/commons/DebugInfo.debug:(Ljava/lang/String;)V
+        58: return
+        59: aload_0
+        60: getfield      #12                 // Field environment:Lcom/janetfilter/core/Environment;
+        63: invokevirtual #24                 // Method com/janetfilter/core/Environment.isJavaagentMode:()Z
+        66: ifeq          112
+        69: aload_1
+        70: invokeinterface #25,  1           // InterfaceMethod com/janetfilter/core/plugin/MyTransformer.javaagentMode:()Z
+        75: ifne          112
+        78: new           #15                 // class java/lang/StringBuilder
+        81: dup
+        82: invokespecial #16                 // Method java/lang/StringBuilder."<init>":()V
+        85: ldc           #17                 // String Transformer:
+        87: invokevirtual #18                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        90: aload_1
+        91: invokevirtual #19                 // Method java/lang/Object.getClass:()Ljava/lang/Class;
+        94: invokevirtual #20                 // Method java/lang/Class.getName:()Ljava/lang/String;
+        97: invokevirtual #18                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       100: ldc           #26                 // String  is set to not load in -javaagent mode, ignored.
+       102: invokevirtual #18                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       105: invokevirtual #22                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       108: invokestatic  #23                 // Method com/janetfilter/core/commons/DebugInfo.debug:(Ljava/lang/String;)V
+       111: return
+       112: aload_0
+       113: dup
+       114: astore_2
+       115: monitorenter
+       116: aload_1
+       117: invokeinterface #27,  1           // InterfaceMethod com/janetfilter/core/plugin/MyTransformer.getHookClassName:()Ljava/lang/String;
+       122: astore_3
+       123: aconst_null
+       124: aload_3
+       125: if_acmpne     162
+       128: aload_0
+       129: getfield      #10                 // Field globalTransformers:Ljava/util/List;
+       132: aload_1
+       133: invokeinterface #28,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       138: pop
+       139: aload_1
+       140: invokeinterface #29,  1           // InterfaceMethod com/janetfilter/core/plugin/MyTransformer.isManager:()Z
+       145: ifeq          159
+       148: aload_0
+       149: getfield      #11                 // Field manageTransformers:Ljava/util/List;
+       152: aload_1
+       153: invokeinterface #28,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       158: pop
+       159: aload_2
+       160: monitorexit
+       161: return
+       162: aload_0
+       163: getfield      #4                  // Field classSet:Ljava/util/Set;
+       166: aload_3
+       167: bipush        47
+       169: bipush        46
+       171: invokevirtual #30                 // Method java/lang/String.replace:(CC)Ljava/lang/String;
+       174: invokeinterface #31,  2           // InterfaceMethod java/util/Set.add:(Ljava/lang/Object;)Z
+       179: pop
+       180: aload_0
+       181: getfield      #7                  // Field transformerMap:Ljava/util/Map;
+       184: aload_3
+       185: invokedynamic #32,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+       190: invokeinterface #33,  3           // InterfaceMethod java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+       195: checkcast     #34                 // class java/util/List
+       198: astore        4
+       200: aload         4
+       202: aload_1
+       203: invokeinterface #28,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+       208: pop
+       209: aload_2
+       210: monitorexit
+       211: goto          221
+       214: astore        5
+       216: aload_2
+       217: monitorexit
+       218: aload         5
+       220: athrow
+       221: return
+      Exception table:
+         from    to  target type
+           116   161   214   any
+           162   211   214   any
+           214   218   214   any
+
+  public void addTransformers(java.util.List<com.janetfilter.core.plugin.MyTransformer>);
+    descriptor: (Ljava/util/List;)V
+    Code:
+         0: aconst_null
+         1: aload_1
+         2: if_acmpne     6
+         5: return
+         6: aload_1
+         7: invokeinterface #35,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        12: astore_2
+        13: aload_2
+        14: invokeinterface #36,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        19: ifeq          40
+        22: aload_2
+        23: invokeinterface #37,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        28: checkcast     #38                 // class com/janetfilter/core/plugin/MyTransformer
+        31: astore_3
+        32: aload_0
+        33: aload_3
+        34: invokevirtual #39                 // Method addTransformer:(Lcom/janetfilter/core/plugin/MyTransformer;)V
+        37: goto          13
+        40: return
+
+  public void addTransformers(com.janetfilter.core.plugin.MyTransformer[]);
+    descriptor: ([Lcom/janetfilter/core/plugin/MyTransformer;)V
+    Code:
+         0: aconst_null
+         1: aload_1
+         2: if_acmpne     6
+         5: return
+         6: aload_0
+         7: aload_1
+         8: invokestatic  #40                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+        11: invokevirtual #41                 // Method addTransformers:(Ljava/util/List;)V
+        14: return
+
+  public java.util.Set<java.lang.String> getHookClassNames();
+    descriptor: ()Ljava/util/Set;
+    Code:
+         0: aload_0
+         1: getfield      #4                  // Field classSet:Ljava/util/Set;
+         4: areturn
+
+  public byte[] transform(java.lang.ClassLoader, java.lang.String, java.lang.Class<?>, java.security.ProtectionDomain, byte[]) throws java.lang.instrument.IllegalClassFormatException;
+    descriptor: (Ljava/lang/ClassLoader;Ljava/lang/String;Ljava/lang/Class;Ljava/security/ProtectionDomain;[B)[B
+    Code:
+         0: aconst_null
+         1: aload_2
+         2: if_acmpne     8
+         5: aload         5
+         7: areturn
+         8: aload_0
+         9: getfield      #7                  // Field transformerMap:Ljava/util/Map;
+        12: aload_2
+        13: invokeinterface #42,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+        18: checkcast     #34                 // class java/util/List
+        21: astore        6
+        23: aconst_null
+        24: aload         6
+        26: if_acmpne     36
+        29: aload_0
+        30: getfield      #11                 // Field manageTransformers:Ljava/util/List;
+        33: goto          40
+        36: aload_0
+        37: getfield      #10                 // Field globalTransformers:Ljava/util/List;
+        40: astore        7
+        42: iconst_0
+        43: istore        8
+        45: aload         7
+        47: invokeinterface #35,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        52: astore        9
+        54: aload         9
+        56: invokeinterface #36,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        61: ifeq          93
+        64: aload         9
+        66: invokeinterface #37,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        71: checkcast     #38                 // class com/janetfilter/core/plugin/MyTransformer
+        74: astore        10
+        76: aload         10
+        78: aload_1
+        79: aload_3
+        80: aload         4
+        82: aload_2
+        83: aload         5
+        85: invokeinterface #43,  6           // InterfaceMethod com/janetfilter/core/plugin/MyTransformer.before:(Ljava/lang/ClassLoader;Ljava/lang/Class;Ljava/security/ProtectionDomain;Ljava/lang/String;[B)V
+        90: goto          54
+        93: aload         7
+        95: invokeinterface #35,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       100: astore        9
+       102: aload         9
+       104: invokeinterface #36,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+       109: ifeq          148
+       112: aload         9
+       114: invokeinterface #37,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       119: checkcast     #38                 // class com/janetfilter/core/plugin/MyTransformer
+       122: astore        10
+       124: aload         10
+       126: aload_1
+       127: aload_3
+       128: aload         4
+       130: aload_2
+       131: aload         5
+       133: iload         8
+       135: iinc          8, 1
+       138: invokeinterface #44,  7           // InterfaceMethod com/janetfilter/core/plugin/MyTransformer.preTransform:(Ljava/lang/ClassLoader;Ljava/lang/Class;Ljava/security/ProtectionDomain;Ljava/lang/String;[BI)[B
+       143: astore        5
+       145: goto          102
+       148: aconst_null
+       149: aload         6
+       151: if_acmpeq     209
+       154: aload         6
+       156: invokeinterface #35,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       161: astore        9
+       163: aload         9
+       165: invokeinterface #36,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+       170: ifeq          209
+       173: aload         9
+       175: invokeinterface #37,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       180: checkcast     #38                 // class com/janetfilter/core/plugin/MyTransformer
+       183: astore        10
+       185: aload         10
+       187: aload_1
+       188: aload_3
+       189: aload         4
+       191: aload_2
+       192: aload         5
+       194: iload         8
+       196: iinc          8, 1
+       199: invokeinterface #45,  7           // InterfaceMethod com/janetfilter/core/plugin/MyTransformer.transform:(Ljava/lang/ClassLoader;Ljava/lang/Class;Ljava/security/ProtectionDomain;Ljava/lang/String;[BI)[B
+       204: astore        5
+       206: goto          163
+       209: aload         7
+       211: invokeinterface #35,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       216: astore        9
+       218: aload         9
+       220: invokeinterface #36,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+       225: ifeq          264
+       228: aload         9
+       230: invokeinterface #37,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       235: checkcast     #38                 // class com/janetfilter/core/plugin/MyTransformer
+       238: astore        10
+       240: aload         10
+       242: aload_1
+       243: aload_3
+       244: aload         4
+       246: aload_2
+       247: aload         5
+       249: iload         8
+       251: iinc          8, 1
+       254: invokeinterface #46,  7           // InterfaceMethod com/janetfilter/core/plugin/MyTransformer.postTransform:(Ljava/lang/ClassLoader;Ljava/lang/Class;Ljava/security/ProtectionDomain;Ljava/lang/String;[BI)[B
+       259: astore        5
+       261: goto          218
+       264: aload         7
+       266: invokeinterface #35,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       271: astore        9
+       273: aload         9
+       275: invokeinterface #36,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+       280: ifeq          312
+       283: aload         9
+       285: invokeinterface #37,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+       290: checkcast     #38                 // class com/janetfilter/core/plugin/MyTransformer
+       293: astore        10
+       295: aload         10
+       297: aload_1
+       298: aload_3
+       299: aload         4
+       301: aload_2
+       302: aload         5
+       304: invokeinterface #47,  6           // InterfaceMethod com/janetfilter/core/plugin/MyTransformer.after:(Ljava/lang/ClassLoader;Ljava/lang/Class;Ljava/security/ProtectionDomain;Ljava/lang/String;[B)V
+       309: goto          273
+       312: goto          341
+       315: astore        9
+       317: new           #15                 // class java/lang/StringBuilder
+       320: dup
+       321: invokespecial #16                 // Method java/lang/StringBuilder."<init>":()V
+       324: ldc           #49                 // String Transform class failed:
+       326: invokevirtual #18                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       329: aload_2
+       330: invokevirtual #18                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       333: invokevirtual #22                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       336: aload         9
+       338: invokestatic  #50                 // Method com/janetfilter/core/commons/DebugInfo.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+       341: aload         5
+       343: areturn
+      Exception table:
+         from    to  target type
+            45   312   315   Class java/lang/Throwable
+
+  private static java.util.List lambda$addTransformer$0(java.lang.String);
+    descriptor: (Ljava/lang/String;)Ljava/util/List;
+    Code:
+         0: new           #8                  // class java/util/ArrayList
+         3: dup
+         4: invokespecial #9                  // Method java/util/ArrayList."<init>":()V
+         7: areturn
+}
+Compiled from "PluginManager.java"
+class com.janetfilter.core.plugin.PluginManager$PluginLoadTask implements java.lang.Runnable {
+  private final java.io.File pluginFile;
+    descriptor: Ljava/io/File;
+
+  final com.janetfilter.core.plugin.PluginManager this$0;
+    descriptor: Lcom/janetfilter/core/plugin/PluginManager;
+
+  public com.janetfilter.core.plugin.PluginManager$PluginLoadTask(com.janetfilter.core.plugin.PluginManager, java.io.File);
+    descriptor: (Lcom/janetfilter/core/plugin/PluginManager;Ljava/io/File;)V
+    Code:
+         0: aload_0
+         1: aload_1
+         2: putfield      #2                  // Field this$0:Lcom/janetfilter/core/plugin/PluginManager;
+         5: aload_0
+         6: invokespecial #3                  // Method java/lang/Object."<init>":()V
+         9: aload_0
+        10: aload_2
+        11: putfield      #4                  // Field pluginFile:Ljava/io/File;
+        14: return
+
+  public void run();
+    descriptor: ()V
+    Code:
+         0: aload_0
+         1: getfield      #4                  // Field pluginFile:Ljava/io/File;
+         4: invokevirtual #5                  // Method java/io/File.getName:()Ljava/lang/String;
+         7: aload_0
+         8: getfield      #2                  // Field this$0:Lcom/janetfilter/core/plugin/PluginManager;
+        11: invokestatic  #6                  // Method com/janetfilter/core/plugin/PluginManager.access$000:(Lcom/janetfilter/core/plugin/PluginManager;)Lcom/janetfilter/core/Environment;
+        14: invokevirtual #7                  // Method com/janetfilter/core/Environment.getDisabledPluginSuffix:()Ljava/lang/String;
+        17: invokevirtual #8                  // Method java/lang/String.endsWith:(Ljava/lang/String;)Z
+        20: ifeq          54
+        23: new           #9                  // class java/lang/StringBuilder
+        26: dup
+        27: invokespecial #10                 // Method java/lang/StringBuilder."<init>":()V
+        30: ldc           #11                 // String Disabled plugin:
+        32: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        35: aload_0
+        36: getfield      #4                  // Field pluginFile:Ljava/io/File;
+        39: invokevirtual #13                 // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+        42: ldc           #14                 // String , ignored.
+        44: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        47: invokevirtual #15                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+        50: invokestatic  #16                 // Method com/janetfilter/core/commons/DebugInfo.debug:(Ljava/lang/String;)V
+        53: return
+        54: new           #17                 // class java/util/jar/JarFile
+        57: dup
+        58: aload_0
+        59: getfield      #4                  // Field pluginFile:Ljava/io/File;
+        62: invokespecial #18                 // Method java/util/jar/JarFile."<init>":(Ljava/io/File;)V
+        65: astore_1
+        66: aload_1
+        67: invokevirtual #19                 // Method java/util/jar/JarFile.getManifest:()Ljava/util/jar/Manifest;
+        70: astore_2
+        71: aload_2
+        72: invokevirtual #20                 // Method java/util/jar/Manifest.getMainAttributes:()Ljava/util/jar/Attributes;
+        75: ldc           #21                 // String JANF-Plugin-Entry
+        77: invokevirtual #22                 // Method java/util/jar/Attributes.getValue:(Ljava/lang/String;)Ljava/lang/String;
+        80: astore_3
+        81: aload_3
+        82: invokestatic  #23                 // Method com/janetfilter/core/utils/StringUtils.isEmpty:(Ljava/lang/String;)Z
+        85: ifeq          89
+        88: return
+        89: new           #24                 // class com/janetfilter/core/plugin/PluginClassLoader
+        92: dup
+        93: aload_1
+        94: invokespecial #25                 // Method com/janetfilter/core/plugin/PluginClassLoader."<init>":(Ljava/util/jar/JarFile;)V
+        97: astore        4
+        99: aload_3
+       100: iconst_0
+       101: aload         4
+       103: invokestatic  #26                 // Method java/lang/Class.forName:(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+       106: astore        5
+       108: aload         5
+       110: invokevirtual #27                 // Method java/lang/Class.getInterfaces:()[Ljava/lang/Class;
+       113: invokestatic  #28                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       116: ldc           #29                 // class com/janetfilter/core/plugin/PluginEntry
+       118: invokeinterface #30,  2           // InterfaceMethod java/util/List.contains:(Ljava/lang/Object;)Z
+       123: ifne          127
+       126: return
+       127: aload_0
+       128: getfield      #2                  // Field this$0:Lcom/janetfilter/core/plugin/PluginManager;
+       131: invokestatic  #31                 // Method com/janetfilter/core/plugin/PluginManager.access$100:(Lcom/janetfilter/core/plugin/PluginManager;)Ljava/lang/instrument/Instrumentation;
+       134: dup
+       135: astore        6
+       137: monitorenter
+       138: aload_0
+       139: getfield      #2                  // Field this$0:Lcom/janetfilter/core/plugin/PluginManager;
+       142: invokestatic  #31                 // Method com/janetfilter/core/plugin/PluginManager.access$100:(Lcom/janetfilter/core/plugin/PluginManager;)Ljava/lang/instrument/Instrumentation;
+       145: aload_1
+       146: invokeinterface #32,  2           // InterfaceMethod java/lang/instrument/Instrumentation.appendToBootstrapClassLoaderSearch:(Ljava/util/jar/JarFile;)V
+       151: aload         6
+       153: monitorexit
+       154: goto          165
+       157: astore        7
+       159: aload         6
+       161: monitorexit
+       162: aload         7
+       164: athrow
+       165: aload_3
+       166: invokestatic  #33                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+       169: invokevirtual #34                 // Method java/lang/Class.newInstance:()Ljava/lang/Object;
+       172: checkcast     #29                 // class com/janetfilter/core/plugin/PluginEntry
+       175: astore        6
+       177: new           #35                 // class java/io/File
+       180: dup
+       181: aload_0
+       182: getfield      #2                  // Field this$0:Lcom/janetfilter/core/plugin/PluginManager;
+       185: invokestatic  #6                  // Method com/janetfilter/core/plugin/PluginManager.access$000:(Lcom/janetfilter/core/plugin/PluginManager;)Lcom/janetfilter/core/Environment;
+       188: invokevirtual #36                 // Method com/janetfilter/core/Environment.getConfigDir:()Ljava/io/File;
+       191: new           #9                  // class java/lang/StringBuilder
+       194: dup
+       195: invokespecial #10                 // Method java/lang/StringBuilder."<init>":()V
+       198: aload         6
+       200: invokeinterface #37,  1           // InterfaceMethod com/janetfilter/core/plugin/PluginEntry.getName:()Ljava/lang/String;
+       205: invokevirtual #38                 // Method java/lang/String.toLowerCase:()Ljava/lang/String;
+       208: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       211: ldc           #39                 // String .conf
+       213: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       216: invokevirtual #15                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       219: invokespecial #40                 // Method java/io/File."<init>":(Ljava/io/File;Ljava/lang/String;)V
+       222: astore        7
+       224: new           #41                 // class com/janetfilter/core/plugin/PluginConfig
+       227: dup
+       228: aload         7
+       230: aload         7
+       232: invokestatic  #42                 // Method com/janetfilter/core/commons/ConfigParser.parse:(Ljava/io/File;)Ljava/util/Map;
+       235: invokespecial #43                 // Method com/janetfilter/core/plugin/PluginConfig."<init>":(Ljava/io/File;Ljava/util/Map;)V
+       238: astore        8
+       240: aload         6
+       242: aload_0
+       243: getfield      #2                  // Field this$0:Lcom/janetfilter/core/plugin/PluginManager;
+       246: invokestatic  #6                  // Method com/janetfilter/core/plugin/PluginManager.access$000:(Lcom/janetfilter/core/plugin/PluginManager;)Lcom/janetfilter/core/Environment;
+       249: aload         8
+       251: invokeinterface #44,  3           // InterfaceMethod com/janetfilter/core/plugin/PluginEntry.init:(Lcom/janetfilter/core/Environment;Lcom/janetfilter/core/plugin/PluginConfig;)V
+       256: aload_0
+       257: getfield      #2                  // Field this$0:Lcom/janetfilter/core/plugin/PluginManager;
+       260: invokestatic  #45                 // Method com/janetfilter/core/plugin/PluginManager.access$200:(Lcom/janetfilter/core/plugin/PluginManager;)Lcom/janetfilter/core/Dispatcher;
+       263: aload         6
+       265: invokeinterface #46,  1           // InterfaceMethod com/janetfilter/core/plugin/PluginEntry.getTransformers:()Ljava/util/List;
+       270: invokevirtual #47                 // Method com/janetfilter/core/Dispatcher.addTransformers:(Ljava/util/List;)V
+       273: new           #9                  // class java/lang/StringBuilder
+       276: dup
+       277: invokespecial #10                 // Method java/lang/StringBuilder."<init>":()V
+       280: ldc           #48                 // String Plugin loaded: {name=
+       282: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       285: aload         6
+       287: invokeinterface #37,  1           // InterfaceMethod com/janetfilter/core/plugin/PluginEntry.getName:()Ljava/lang/String;
+       292: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       295: ldc           #49                 // String , version=
+       297: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       300: aload         6
+       302: invokeinterface #50,  1           // InterfaceMethod com/janetfilter/core/plugin/PluginEntry.getVersion:()Ljava/lang/String;
+       307: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       310: ldc           #51                 // String , author=
+       312: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       315: aload         6
+       317: invokeinterface #52,  1           // InterfaceMethod com/janetfilter/core/plugin/PluginEntry.getAuthor:()Ljava/lang/String;
+       322: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       325: ldc           #53                 // String }
+       327: invokevirtual #12                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+       330: invokevirtual #15                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       333: invokestatic  #16                 // Method com/janetfilter/core/commons/DebugInfo.debug:(Ljava/lang/String;)V
+       336: goto          346
+       339: astore_1
+       340: ldc           #55                 // String Parse plugin info failed
+       342: aload_1
+       343: invokestatic  #56                 // Method com/janetfilter/core/commons/DebugInfo.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+       346: return
+      Exception table:
+         from    to  target type
+           138   154   157   any
+           157   162   157   any
+             0    53   339   Class java/lang/Throwable
+            54    88   339   Class java/lang/Throwable
+            89   126   339   Class java/lang/Throwable
+           127   336   339   Class java/lang/Throwable
+}

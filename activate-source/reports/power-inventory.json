@@ -1,0 +1,54 @@
+{
+  "module": "power",
+  "input_jar": "plugins/power.jar",
+  "jar_sha256": "26db4a54482189dc989e59734318d5c12d656183d5394fe3c0fe5b33313cb785",
+  "class_count": 7,
+  "class_major_versions": [
+    52
+  ],
+  "java_file_count": 7,
+  "classes": [
+    "com/janetfilter/plugins/power/ArgsFilter.class",
+    "com/janetfilter/plugins/power/ArgsTransformer.class",
+    "com/janetfilter/plugins/power/GoForFreeFilter.class",
+    "com/janetfilter/plugins/power/GoForFreeTransformer.class",
+    "com/janetfilter/plugins/power/PowerPlugin.class",
+    "com/janetfilter/plugins/power/ResultFilter.class",
+    "com/janetfilter/plugins/power/ResultTransformer.class"
+  ],
+  "java_files": [
+    "com/janetfilter/plugins/power/ArgsFilter.java",
+    "com/janetfilter/plugins/power/ArgsTransformer.java",
+    "com/janetfilter/plugins/power/GoForFreeFilter.java",
+    "com/janetfilter/plugins/power/GoForFreeTransformer.java",
+    "com/janetfilter/plugins/power/PowerPlugin.java",
+    "com/janetfilter/plugins/power/ResultFilter.java",
+    "com/janetfilter/plugins/power/ResultTransformer.java"
+  ],
+  "class_to_source": {
+    "com/janetfilter/plugins/power/ArgsFilter.class": "com/janetfilter/plugins/power/ArgsFilter.java",
+    "com/janetfilter/plugins/power/ArgsTransformer.class": "com/janetfilter/plugins/power/ArgsTransformer.java",
+    "com/janetfilter/plugins/power/GoForFreeFilter.class": "com/janetfilter/plugins/power/GoForFreeFilter.java",
+    "com/janetfilter/plugins/power/GoForFreeTransformer.class": "com/janetfilter/plugins/power/GoForFreeTransformer.java",
+    "com/janetfilter/plugins/power/PowerPlugin.class": "com/janetfilter/plugins/power/PowerPlugin.java",
+    "com/janetfilter/plugins/power/ResultFilter.class": "com/janetfilter/plugins/power/ResultFilter.java",
+    "com/janetfilter/plugins/power/ResultTransformer.class": "com/janetfilter/plugins/power/ResultTransformer.java"
+  },
+  "resources": [
+    "META-INF/MANIFEST.MF"
+  ],
+  "cfr_exit_code": 0,
+  "missing_source_mappings": [],
+  "command": [
+    "java",
+    "-jar",
+    "D:\\Project\\unlock\\activate-source\\tools\\cfr-0.152.jar",
+    "D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar",
+    "--outputdir",
+    "D:\\Project\\unlock\\activate-source\\modules\\power\\src\\main\\java",
+    "--extraclasspath",
+    "D:\\Project\\unlock\\activate-source\\original-package\\active-agt.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\url.jar",
+    "--silent",
+    "true"
+  ]
+}

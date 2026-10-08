@@ -1,0 +1,333 @@
+{
+  "created_utc": "2026-09-05T12:21:43.857411+00:00",
+  "original_file_count": 36,
+  "modules": [
+    {
+      "module": "core",
+      "input_jar": "active-agt.jar",
+      "jar_sha256": "3acc4e9d91793f6909458a4761b75b6da45c8868e75dca33c9fec63659202995",
+      "class_count": 35,
+      "class_major_versions": [
+        52
+      ],
+      "java_file_count": 30,
+      "classes": [
+        "com/janetfilter/core/Dispatcher.class",
+        "com/janetfilter/core/Environment.class",
+        "com/janetfilter/core/Initializer.class",
+        "com/janetfilter/core/Launcher.class",
+        "com/janetfilter/core/attach/VMDescriptor.class",
+        "com/janetfilter/core/attach/VMLauncher.class",
+        "com/janetfilter/core/attach/VMSelector.class",
+        "com/janetfilter/core/commons/ConfigParser.class",
+        "com/janetfilter/core/commons/DebugInfo$ConsoleWriteTask.class",
+        "com/janetfilter/core/commons/DebugInfo$FileWriteTask.class",
+        "com/janetfilter/core/commons/DebugInfo$Level.class",
+        "com/janetfilter/core/commons/DebugInfo.class",
+        "com/janetfilter/core/enums/RuleType.class",
+        "com/janetfilter/core/models/FilterRule.class",
+        "com/janetfilter/core/plugin/MyTransformer.class",
+        "com/janetfilter/core/plugin/PluginClassLoader.class",
+        "com/janetfilter/core/plugin/PluginConfig.class",
+        "com/janetfilter/core/plugin/PluginEntry.class",
+        "com/janetfilter/core/plugin/PluginManager$PluginLoadTask.class",
+        "com/janetfilter/core/plugin/PluginManager.class",
+        "com/janetfilter/core/rulers/EqualICRuler.class",
+        "com/janetfilter/core/rulers/EqualRuler.class",
+        "com/janetfilter/core/rulers/KeywordICRuler.class",
+        "com/janetfilter/core/rulers/KeywordRuler.class",
+        "com/janetfilter/core/rulers/PrefixICRuler.class",
+        "com/janetfilter/core/rulers/PrefixRuler.class",
+        "com/janetfilter/core/rulers/RegExpRuler.class",
+        "com/janetfilter/core/rulers/Ruler.class",
+        "com/janetfilter/core/rulers/SuffixICRuler.class",
+        "com/janetfilter/core/rulers/SuffixRuler.class",
+        "com/janetfilter/core/utils/DateUtils.class",
+        "com/janetfilter/core/utils/ProcessUtils$RedirectOutput.class",
+        "com/janetfilter/core/utils/ProcessUtils.class",
+        "com/janetfilter/core/utils/StringUtils.class",
+        "com/janetfilter/core/utils/WhereIsUtils.class"
+      ],
+      "java_files": [
+        "com/janetfilter/core/Dispatcher.java",
+        "com/janetfilter/core/Environment.java",
+        "com/janetfilter/core/Initializer.java",
+        "com/janetfilter/core/Launcher.java",
+        "com/janetfilter/core/attach/VMDescriptor.java",
+        "com/janetfilter/core/attach/VMLauncher.java",
+        "com/janetfilter/core/attach/VMSelector.java",
+        "com/janetfilter/core/commons/ConfigParser.java",
+        "com/janetfilter/core/commons/DebugInfo.java",
+        "com/janetfilter/core/enums/RuleType.java",
+        "com/janetfilter/core/models/FilterRule.java",
+        "com/janetfilter/core/plugin/MyTransformer.java",
+        "com/janetfilter/core/plugin/PluginClassLoader.java",
+        "com/janetfilter/core/plugin/PluginConfig.java",
+        "com/janetfilter/core/plugin/PluginEntry.java",
+        "com/janetfilter/core/plugin/PluginManager.java",
+        "com/janetfilter/core/rulers/EqualICRuler.java",
+        "com/janetfilter/core/rulers/EqualRuler.java",
+        "com/janetfilter/core/rulers/KeywordICRuler.java",
+        "com/janetfilter/core/rulers/KeywordRuler.java",
+        "com/janetfilter/core/rulers/PrefixICRuler.java",
+        "com/janetfilter/core/rulers/PrefixRuler.java",
+        "com/janetfilter/core/rulers/RegExpRuler.java",
+        "com/janetfilter/core/rulers/Ruler.java",
+        "com/janetfilter/core/rulers/SuffixICRuler.java",
+        "com/janetfilter/core/rulers/SuffixRuler.java",
+        "com/janetfilter/core/utils/DateUtils.java",
+        "com/janetfilter/core/utils/ProcessUtils.java",
+        "com/janetfilter/core/utils/StringUtils.java",
+        "com/janetfilter/core/utils/WhereIsUtils.java"
+      ],
+      "class_to_source": {
+        "com/janetfilter/core/Dispatcher.class": "com/janetfilter/core/Dispatcher.java",
+        "com/janetfilter/core/Environment.class": "com/janetfilter/core/Environment.java",
+        "com/janetfilter/core/Initializer.class": "com/janetfilter/core/Initializer.java",
+        "com/janetfilter/core/Launcher.class": "com/janetfilter/core/Launcher.java",
+        "com/janetfilter/core/attach/VMDescriptor.class": "com/janetfilter/core/attach/VMDescriptor.java",
+        "com/janetfilter/core/attach/VMLauncher.class": "com/janetfilter/core/attach/VMLauncher.java",
+        "com/janetfilter/core/attach/VMSelector.class": "com/janetfilter/core/attach/VMSelector.java",
+        "com/janetfilter/core/commons/ConfigParser.class": "com/janetfilter/core/commons/ConfigParser.java",
+        "com/janetfilter/core/commons/DebugInfo$ConsoleWriteTask.class": "com/janetfilter/core/commons/DebugInfo.java",
+        "com/janetfilter/core/commons/DebugInfo$FileWriteTask.class": "com/janetfilter/core/commons/DebugInfo.java",
+        "com/janetfilter/core/commons/DebugInfo$Level.class": "com/janetfilter/core/commons/DebugInfo.java",
+        "com/janetfilter/core/commons/DebugInfo.class": "com/janetfilter/core/commons/DebugInfo.java",
+        "com/janetfilter/core/enums/RuleType.class": "com/janetfilter/core/enums/RuleType.java",
+        "com/janetfilter/core/models/FilterRule.class": "com/janetfilter/core/models/FilterRule.java",
+        "com/janetfilter/core/plugin/MyTransformer.class": "com/janetfilter/core/plugin/MyTransformer.java",
+        "com/janetfilter/core/plugin/PluginClassLoader.class": "com/janetfilter/core/plugin/PluginClassLoader.java",
+        "com/janetfilter/core/plugin/PluginConfig.class": "com/janetfilter/core/plugin/PluginConfig.java",
+        "com/janetfilter/core/plugin/PluginEntry.class": "com/janetfilter/core/plugin/PluginEntry.java",
+        "com/janetfilter/core/plugin/PluginManager$PluginLoadTask.class": "com/janetfilter/core/plugin/PluginManager.java",
+        "com/janetfilter/core/plugin/PluginManager.class": "com/janetfilter/core/plugin/PluginManager.java",
+        "com/janetfilter/core/rulers/EqualICRuler.class": "com/janetfilter/core/rulers/EqualICRuler.java",
+        "com/janetfilter/core/rulers/EqualRuler.class": "com/janetfilter/core/rulers/EqualRuler.java",
+        "com/janetfilter/core/rulers/KeywordICRuler.class": "com/janetfilter/core/rulers/KeywordICRuler.java",
+        "com/janetfilter/core/rulers/KeywordRuler.class": "com/janetfilter/core/rulers/KeywordRuler.java",
+        "com/janetfilter/core/rulers/PrefixICRuler.class": "com/janetfilter/core/rulers/PrefixICRuler.java",
+        "com/janetfilter/core/rulers/PrefixRuler.class": "com/janetfilter/core/rulers/PrefixRuler.java",
+        "com/janetfilter/core/rulers/RegExpRuler.class": "com/janetfilter/core/rulers/RegExpRuler.java",
+        "com/janetfilter/core/rulers/Ruler.class": "com/janetfilter/core/rulers/Ruler.java",
+        "com/janetfilter/core/rulers/SuffixICRuler.class": "com/janetfilter/core/rulers/SuffixICRuler.java",
+        "com/janetfilter/core/rulers/SuffixRuler.class": "com/janetfilter/core/rulers/SuffixRuler.java",
+        "com/janetfilter/core/utils/DateUtils.class": "com/janetfilter/core/utils/DateUtils.java",
+        "com/janetfilter/core/utils/ProcessUtils$RedirectOutput.class": "com/janetfilter/core/utils/ProcessUtils.java",
+        "com/janetfilter/core/utils/ProcessUtils.class": "com/janetfilter/core/utils/ProcessUtils.java",
+        "com/janetfilter/core/utils/StringUtils.class": "com/janetfilter/core/utils/StringUtils.java",
+        "com/janetfilter/core/utils/WhereIsUtils.class": "com/janetfilter/core/utils/WhereIsUtils.java"
+      },
+      "resources": [
+        "META-INF/MANIFEST.MF",
+        "6c81ec87e55d331c267262e892427a3d93d76683.txt"
+      ],
+      "cfr_exit_code": 0,
+      "missing_source_mappings": [],
+      "command": [
+        "java",
+        "-jar",
+        "D:\\Project\\unlock\\activate-source\\tools\\cfr-0.152.jar",
+        "D:\\Project\\unlock\\activate-source\\original-package\\active-agt.jar",
+        "--outputdir",
+        "D:\\Project\\unlock\\activate-source\\modules\\core\\src\\main\\java",
+        "--extraclasspath",
+        "D:\\Project\\unlock\\activate-source\\original-package\\active-agt.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\url.jar",
+        "--silent",
+        "true"
+      ]
+    },
+    {
+      "module": "dns",
+      "input_jar": "plugins/dns.jar",
+      "jar_sha256": "d1150b1831b112b93d74a34a10ce6c11606e0d2255d532c29f91f1d92b40a552",
+      "class_count": 3,
+      "class_major_versions": [
+        52
+      ],
+      "java_file_count": 3,
+      "classes": [
+        "com/janetfilter/plugins/dns/DNSFilter.class",
+        "com/janetfilter/plugins/dns/DNSFilterPlugin.class",
+        "com/janetfilter/plugins/dns/InetAddressTransformer.class"
+      ],
+      "java_files": [
+        "com/janetfilter/plugins/dns/DNSFilter.java",
+        "com/janetfilter/plugins/dns/DNSFilterPlugin.java",
+        "com/janetfilter/plugins/dns/InetAddressTransformer.java"
+      ],
+      "class_to_source": {
+        "com/janetfilter/plugins/dns/DNSFilter.class": "com/janetfilter/plugins/dns/DNSFilter.java",
+        "com/janetfilter/plugins/dns/DNSFilterPlugin.class": "com/janetfilter/plugins/dns/DNSFilterPlugin.java",
+        "com/janetfilter/plugins/dns/InetAddressTransformer.class": "com/janetfilter/plugins/dns/InetAddressTransformer.java"
+      },
+      "resources": [
+        "META-INF/MANIFEST.MF"
+      ],
+      "cfr_exit_code": 0,
+      "missing_source_mappings": [],
+      "command": [
+        "java",
+        "-jar",
+        "D:\\Project\\unlock\\activate-source\\tools\\cfr-0.152.jar",
+        "D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar",
+        "--outputdir",
+        "D:\\Project\\unlock\\activate-source\\modules\\dns\\src\\main\\java",
+        "--extraclasspath",
+        "D:\\Project\\unlock\\activate-source\\original-package\\active-agt.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\url.jar",
+        "--silent",
+        "true"
+      ]
+    },
+    {
+      "module": "hideme",
+      "input_jar": "plugins/hideme.jar",
+      "jar_sha256": "fa14c735ab9fed3f3a5df0dc78a5d38ae0a146099ddc858197e9f528bd996c40",
+      "class_count": 5,
+      "class_major_versions": [
+        52
+      ],
+      "java_file_count": 5,
+      "classes": [
+        "com/janetfilter/plugins/hideme/ClassNameFilter.class",
+        "com/janetfilter/plugins/hideme/ClassNameTransformer.class",
+        "com/janetfilter/plugins/hideme/HideMePlugin.class",
+        "com/janetfilter/plugins/hideme/VMTransformer.class",
+        "com/janetfilter/plugins/hideme/VmArgumentFilter.class"
+      ],
+      "java_files": [
+        "com/janetfilter/plugins/hideme/ClassNameFilter.java",
+        "com/janetfilter/plugins/hideme/ClassNameTransformer.java",
+        "com/janetfilter/plugins/hideme/HideMePlugin.java",
+        "com/janetfilter/plugins/hideme/VMTransformer.java",
+        "com/janetfilter/plugins/hideme/VmArgumentFilter.java"
+      ],
+      "class_to_source": {
+        "com/janetfilter/plugins/hideme/ClassNameFilter.class": "com/janetfilter/plugins/hideme/ClassNameFilter.java",
+        "com/janetfilter/plugins/hideme/ClassNameTransformer.class": "com/janetfilter/plugins/hideme/ClassNameTransformer.java",
+        "com/janetfilter/plugins/hideme/HideMePlugin.class": "com/janetfilter/plugins/hideme/HideMePlugin.java",
+        "com/janetfilter/plugins/hideme/VMTransformer.class": "com/janetfilter/plugins/hideme/VMTransformer.java",
+        "com/janetfilter/plugins/hideme/VmArgumentFilter.class": "com/janetfilter/plugins/hideme/VmArgumentFilter.java"
+      },
+      "resources": [
+        "META-INF/MANIFEST.MF"
+      ],
+      "cfr_exit_code": 0,
+      "missing_source_mappings": [],
+      "command": [
+        "java",
+        "-jar",
+        "D:\\Project\\unlock\\activate-source\\tools\\cfr-0.152.jar",
+        "D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar",
+        "--outputdir",
+        "D:\\Project\\unlock\\activate-source\\modules\\hideme\\src\\main\\java",
+        "--extraclasspath",
+        "D:\\Project\\unlock\\activate-source\\original-package\\active-agt.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\url.jar",
+        "--silent",
+        "true"
+      ]
+    },
+    {
+      "module": "power",
+      "input_jar": "plugins/power.jar",
+      "jar_sha256": "26db4a54482189dc989e59734318d5c12d656183d5394fe3c0fe5b33313cb785",
+      "class_count": 7,
+      "class_major_versions": [
+        52
+      ],
+      "java_file_count": 7,
+      "classes": [
+        "com/janetfilter/plugins/power/ArgsFilter.class",
+        "com/janetfilter/plugins/power/ArgsTransformer.class",
+        "com/janetfilter/plugins/power/GoForFreeFilter.class",
+        "com/janetfilter/plugins/power/GoForFreeTransformer.class",
+        "com/janetfilter/plugins/power/PowerPlugin.class",
+        "com/janetfilter/plugins/power/ResultFilter.class",
+        "com/janetfilter/plugins/power/ResultTransformer.class"
+      ],
+      "java_files": [
+        "com/janetfilter/plugins/power/ArgsFilter.java",
+        "com/janetfilter/plugins/power/ArgsTransformer.java",
+        "com/janetfilter/plugins/power/GoForFreeFilter.java",
+        "com/janetfilter/plugins/power/GoForFreeTransformer.java",
+        "com/janetfilter/plugins/power/PowerPlugin.java",
+        "com/janetfilter/plugins/power/ResultFilter.java",
+        "com/janetfilter/plugins/power/ResultTransformer.java"
+      ],
+      "class_to_source": {
+        "com/janetfilter/plugins/power/ArgsFilter.class": "com/janetfilter/plugins/power/ArgsFilter.java",
+        "com/janetfilter/plugins/power/ArgsTransformer.class": "com/janetfilter/plugins/power/ArgsTransformer.java",
+        "com/janetfilter/plugins/power/GoForFreeFilter.class": "com/janetfilter/plugins/power/GoForFreeFilter.java",
+        "com/janetfilter/plugins/power/GoForFreeTransformer.class": "com/janetfilter/plugins/power/GoForFreeTransformer.java",
+        "com/janetfilter/plugins/power/PowerPlugin.class": "com/janetfilter/plugins/power/PowerPlugin.java",
+        "com/janetfilter/plugins/power/ResultFilter.class": "com/janetfilter/plugins/power/ResultFilter.java",
+        "com/janetfilter/plugins/power/ResultTransformer.class": "com/janetfilter/plugins/power/ResultTransformer.java"
+      },
+      "resources": [
+        "META-INF/MANIFEST.MF"
+      ],
+      "cfr_exit_code": 0,
+      "missing_source_mappings": [],
+      "command": [
+        "java",
+        "-jar",
+        "D:\\Project\\unlock\\activate-source\\tools\\cfr-0.152.jar",
+        "D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar",
+        "--outputdir",
+        "D:\\Project\\unlock\\activate-source\\modules\\power\\src\\main\\java",
+        "--extraclasspath",
+        "D:\\Project\\unlock\\activate-source\\original-package\\active-agt.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\url.jar",
+        "--silent",
+        "true"
+      ]
+    },
+    {
+      "module": "url",
+      "input_jar": "plugins/url.jar",
+      "jar_sha256": "ce5a83aee31153cca30274ac94467b316edea8cb28acf72f52f5a72d455b1b43",
+      "class_count": 3,
+      "class_major_versions": [
+        52
+      ],
+      "java_file_count": 3,
+      "classes": [
+        "com/janetfilter/plugins/url/HttpClientTransformer.class",
+        "com/janetfilter/plugins/url/URLFilter.class",
+        "com/janetfilter/plugins/url/URLFilterPlugin.class"
+      ],
+      "java_files": [
+        "com/janetfilter/plugins/url/HttpClientTransformer.java",
+        "com/janetfilter/plugins/url/URLFilter.java",
+        "com/janetfilter/plugins/url/URLFilterPlugin.java"
+      ],
+      "class_to_source": {
+        "com/janetfilter/plugins/url/HttpClientTransformer.class": "com/janetfilter/plugins/url/HttpClientTransformer.java",
+        "com/janetfilter/plugins/url/URLFilter.class": "com/janetfilter/plugins/url/URLFilter.java",
+        "com/janetfilter/plugins/url/URLFilterPlugin.class": "com/janetfilter/plugins/url/URLFilterPlugin.java"
+      },
+      "resources": [
+        "META-INF/MANIFEST.MF"
+      ],
+      "cfr_exit_code": 0,
+      "missing_source_mappings": [],
+      "command": [
+        "java",
+        "-jar",
+        "D:\\Project\\unlock\\activate-source\\tools\\cfr-0.152.jar",
+        "D:\\Project\\unlock\\activate-source\\original-package\\plugins\\url.jar",
+        "--outputdir",
+        "D:\\Project\\unlock\\activate-source\\modules\\url\\src\\main\\java",
+        "--extraclasspath",
+        "D:\\Project\\unlock\\activate-source\\original-package\\active-agt.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\url.jar",
+        "--silent",
+        "true"
+      ]
+    }
+  ],
+  "original_unchanged": true,
+  "snapshot_identical": true,
+  "total_class_files": 53,
+  "total_java_files": 48,
+  "original_vbs_files": 9,
+  "target_code_executed": false,
+  "compilation_verified": false
+}

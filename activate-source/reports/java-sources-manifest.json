@@ -1,0 +1,242 @@
+[
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/attach/VMDescriptor.java",
+    "bytes": 1014,
+    "sha256": "7a9d51abf5e94cf446779dc7aa68fd5726295838ca6c47540b0b5915dd4890ca"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/attach/VMLauncher.java",
+    "bytes": 2800,
+    "sha256": "88bc8085c4cf444f3f98f303d677d4800d3c28a4b3e90a74b2ff2697f4d8e1a2"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/attach/VMSelector.java",
+    "bytes": 4527,
+    "sha256": "73c9b34aa9d2cf66efa02aa74d79997152b297fd0e2325572d397a3e6ca1dcbf"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/commons/ConfigParser.java",
+    "bytes": 3609,
+    "sha256": "c9b716bfe2f65f2ae1e2d432a62be7a88a25cc49882a3b8fc934c31d1413c0ec"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/commons/DebugInfo.java",
+    "bytes": 7965,
+    "sha256": "5928fd48ea3d0cc76a77562f0416f80e3046a985498c0bac98a3d9b66b4c1820"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/Dispatcher.java",
+    "bytes": 4737,
+    "sha256": "5edcc4b58d3ada6d819018162a80005d5420aa748429932430a29cac957da04e"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/enums/RuleType.java",
+    "bytes": 1049,
+    "sha256": "f0f9c41f9f03a50fcfbf66dd170685d36a19f84f7a792ff9dd8f1ba0f778d68e"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/Environment.java",
+    "bytes": 3608,
+    "sha256": "5b1cae360b0aba4895bfeb238c5c427f9a5703021458b3918bf0cc7f76e75758"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/Initializer.java",
+    "bytes": 1280,
+    "sha256": "0e42ac95126521ab5aa4a728552349acaf2463013b137ede159bb92dd64633a5"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/Launcher.java",
+    "bytes": 3205,
+    "sha256": "86b4d6b234776c7cf958900327dbd7fe2e8f4b1d6ba0ecbf5245b0bb8ab662e5"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/models/FilterRule.java",
+    "bytes": 1369,
+    "sha256": "67c768f7392f6802ba1e516171afcf3344295f5c0b97ed3d6564bb7184075c99"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/plugin/MyTransformer.java",
+    "bytes": 2267,
+    "sha256": "353bbb6a5a7aebbcd8737713c7b78067615b14136220e33c325e2e8d3b23e62d"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/plugin/PluginClassLoader.java",
+    "bytes": 1465,
+    "sha256": "e8262c7c117649d404d023466b11956a9121accf4754d63de4ffe6b8f6c220ee"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/plugin/PluginConfig.java",
+    "bytes": 741,
+    "sha256": "21e16ed1b934b12c9f3a68a311bf7dc378caec144eb3b029f473d71509f6f00c"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/plugin/PluginEntry.java",
+    "bytes": 635,
+    "sha256": "83334188fc4dbd99c3ce32ed98a145042ecce7df714ab7746a000ac84ef46ab9"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/plugin/PluginManager.java",
+    "bytes": 4578,
+    "sha256": "7cf33c788f6c2f9cd6ee910faa4c802d61ba48cb847677e44171672e7d94bdd8"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/EqualICRuler.java",
+    "bytes": 288,
+    "sha256": "0126a8d822aea638b2f5d255fa4fb1eef000a82f6db583210f169ab1faee8131"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/EqualRuler.java",
+    "bytes": 276,
+    "sha256": "82ce4e9f6d52f19d64ce5007ce2bef04678a5cc234528331ad536e2df1d28a7a"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/KeywordICRuler.java",
+    "bytes": 310,
+    "sha256": "990441e857375ff9ec5e457f7cb904e0beeaff1c02851e3c94fc26b2373aef5e"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/KeywordRuler.java",
+    "bytes": 280,
+    "sha256": "339d103ed8af3eba78920e9c14a83c32ac5e5ead5c258781977f4ba77fb626af"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/PrefixICRuler.java",
+    "bytes": 311,
+    "sha256": "e7f7af016ef0634ac13e80dc809044cf2f4cc0e41618d403b858174d1718f547"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/PrefixRuler.java",
+    "bytes": 281,
+    "sha256": "7c454f64ed19618613fe62da75d79869c6618f575a4d9988e918f54b0cd3ea26"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/RegExpRuler.java",
+    "bytes": 319,
+    "sha256": "822c8125f4806e6074501f728935cc625a800a6f81d2a69d122212dee92d1619"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/Ruler.java",
+    "bytes": 194,
+    "sha256": "8d5280562b21cd0051d5e0784d656f33a264316514adfa37d443072c5b1f154f"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/SuffixICRuler.java",
+    "bytes": 309,
+    "sha256": "ba94924ab48491b07ed7c3b0aae6f7f4786810611041493fc50a23645b13f727"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/rulers/SuffixRuler.java",
+    "bytes": 279,
+    "sha256": "f506c1cd59264fd23b6da1e55e0496fcdfb3683b6ec9f6bc43d4b005618fe16b"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/utils/DateUtils.java",
+    "bytes": 1647,
+    "sha256": "b42664e1b596ebefe26bf3c487d0d390d28d6e1a90521238828e3fd21859fcf7"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/utils/ProcessUtils.java",
+    "bytes": 2230,
+    "sha256": "d7b2af8b91a07f654334ca493519ac3c2b10b9c03b74737b520f3bd0567e8b54"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/utils/StringUtils.java",
+    "bytes": 1031,
+    "sha256": "c31c0c0d6a1a98f8389463b9c6ed256552fa2ca287cacc6641eb68d965e48760"
+  },
+  {
+    "path": "modules/core/src/main/java/com/janetfilter/core/utils/WhereIsUtils.java",
+    "bytes": 2399,
+    "sha256": "b34a570d70b09e1a03816e4cef3383f0057a67fbb7341e2ee292697324884f99"
+  },
+  {
+    "path": "modules/dns/src/main/java/com/janetfilter/plugins/dns/DNSFilter.java",
+    "bytes": 1271,
+    "sha256": "08ad8570cfecaff6222cb840c40593fe6088991fa9485af6693a12787a583d93"
+  },
+  {
+    "path": "modules/dns/src/main/java/com/janetfilter/plugins/dns/DNSFilterPlugin.java",
+    "bytes": 1227,
+    "sha256": "ccaa32272de59a9bbe910a27c6532768e42da2a259d164f533725c71a418d75e"
+  },
+  {
+    "path": "modules/dns/src/main/java/com/janetfilter/plugins/dns/InetAddressTransformer.java",
+    "bytes": 3827,
+    "sha256": "359febd2226125a8c8e3245788ec01a2232c19e066c89134c88e9df93ce18ca8"
+  },
+  {
+    "path": "modules/hideme/src/main/java/com/janetfilter/plugins/hideme/ClassNameFilter.java",
+    "bytes": 761,
+    "sha256": "93bab8851026a3bfd8fbec5baf2520346d831b6aa4a0125985afa480703db9d2"
+  },
+  {
+    "path": "modules/hideme/src/main/java/com/janetfilter/plugins/hideme/ClassNameTransformer.java",
+    "bytes": 2141,
+    "sha256": "f531e4ad4ac330a032241d07e90b19bd8ae16d2dcc524fb686600df6f52c960f"
+  },
+  {
+    "path": "modules/hideme/src/main/java/com/janetfilter/plugins/hideme/HideMePlugin.java",
+    "bytes": 1269,
+    "sha256": "a0c6d64ba8501b7b136993506ca478eb50f6db6e1dbacbb05342afde642bb837"
+  },
+  {
+    "path": "modules/hideme/src/main/java/com/janetfilter/plugins/hideme/VmArgumentFilter.java",
+    "bytes": 1318,
+    "sha256": "a1d4fa8fbb3bf44ce11b8a5d9821095f59d058be6f35bfc92a1709fd84705993"
+  },
+  {
+    "path": "modules/hideme/src/main/java/com/janetfilter/plugins/hideme/VMTransformer.java",
+    "bytes": 3121,
+    "sha256": "38cf05f93c8a676478567ed24cd41e20453842d81114cfb634634d62de6cac21"
+  },
+  {
+    "path": "modules/power/src/main/java/com/janetfilter/plugins/power/ArgsFilter.java",
+    "bytes": 1777,
+    "sha256": "4946d55a1ad9b0e9b0155d3a07c871e4b44641967936c3265d2ebf8588918971"
+  },
+  {
+    "path": "modules/power/src/main/java/com/janetfilter/plugins/power/ArgsTransformer.java",
+    "bytes": 3749,
+    "sha256": "6d7ea91c9f9b6373691d89b3bd59692b0bc21a04c30d01e166d4e7180a4f1797"
+  },
+  {
+    "path": "modules/power/src/main/java/com/janetfilter/plugins/power/GoForFreeFilter.java",
+    "bytes": 279,
+    "sha256": "671d709e1d7cd90e69ebea087ae9ebdd16a54ec4c048ee0b7fa88b47900cb0b9"
+  },
+  {
+    "path": "modules/power/src/main/java/com/janetfilter/plugins/power/GoForFreeTransformer.java",
+    "bytes": 2421,
+    "sha256": "1044d1e94f5e66662643be9ce7af23ba3ebbab70ea37c0eb2fc3d1f8ffba6467"
+  },
+  {
+    "path": "modules/power/src/main/java/com/janetfilter/plugins/power/PowerPlugin.java",
+    "bytes": 1324,
+    "sha256": "92695b21fd46048f8405272ce94daea60679829ee672358706905474cdb12d83"
+  },
+  {
+    "path": "modules/power/src/main/java/com/janetfilter/plugins/power/ResultFilter.java",
+    "bytes": 1551,
+    "sha256": "c0e2c4a9b95b43389a4471e5e3174703d9b9363c1dc80d011c0a4490a5918619"
+  },
+  {
+    "path": "modules/power/src/main/java/com/janetfilter/plugins/power/ResultTransformer.java",
+    "bytes": 3395,
+    "sha256": "73359184caf2ea03e3901db5df85e367aafa34c616f9c729442066e464e08694"
+  },
+  {
+    "path": "modules/url/src/main/java/com/janetfilter/plugins/url/HttpClientTransformer.java",
+    "bytes": 2817,
+    "sha256": "9ba1e6c3d64305df593231e9281f36a4fe5f7c38225524796a29444e84516350"
+  },
+  {
+    "path": "modules/url/src/main/java/com/janetfilter/plugins/url/URLFilter.java",
+    "bytes": 862,
+    "sha256": "de351e5b7e1f77f096eca585273354c76dba245fe7f373c9574cebe56bf95efd"
+  },
+  {
+    "path": "modules/url/src/main/java/com/janetfilter/plugins/url/URLFilterPlugin.java",
+    "bytes": 1224,
+    "sha256": "30d520d8a345cf02c2bda99b320c3990faa9e69ca836fb61065a42213c14cd68"
+  }
+]

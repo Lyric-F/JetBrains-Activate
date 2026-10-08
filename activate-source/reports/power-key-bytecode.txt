@@ -1,0 +1,194 @@
+Compiled from "PowerPlugin.java"
+public class com.janetfilter.plugins.power.PowerPlugin implements com.janetfilter.core.plugin.PluginEntry {
+  private final java.util.List<com.janetfilter.core.plugin.MyTransformer> transformers;
+    descriptor: Ljava/util/List;
+
+  public com.janetfilter.plugins.power.PowerPlugin();
+    descriptor: ()V
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: new           #2                  // class java/util/ArrayList
+         8: dup
+         9: invokespecial #3                  // Method java/util/ArrayList."<init>":()V
+        12: putfield      #4                  // Field transformers:Ljava/util/List;
+        15: return
+
+  public void init(com.janetfilter.core.Environment, com.janetfilter.core.plugin.PluginConfig);
+    descriptor: (Lcom/janetfilter/core/Environment;Lcom/janetfilter/core/plugin/PluginConfig;)V
+    Code:
+         0: aload_0
+         1: getfield      #4                  // Field transformers:Ljava/util/List;
+         4: new           #5                  // class com/janetfilter/plugins/power/ResultTransformer
+         7: dup
+         8: aload_2
+         9: ldc           #6                  // String Result
+        11: invokevirtual #7                  // Method com/janetfilter/core/plugin/PluginConfig.getBySection:(Ljava/lang/String;)Ljava/util/List;
+        14: invokespecial #8                  // Method com/janetfilter/plugins/power/ResultTransformer."<init>":(Ljava/util/List;)V
+        17: invokeinterface #9,  2            // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        22: pop
+        23: aload_0
+        24: getfield      #4                  // Field transformers:Ljava/util/List;
+        27: new           #10                 // class com/janetfilter/plugins/power/GoForFreeTransformer
+        30: dup
+        31: aload_2
+        32: ldc           #6                  // String Result
+        34: invokevirtual #7                  // Method com/janetfilter/core/plugin/PluginConfig.getBySection:(Ljava/lang/String;)Ljava/util/List;
+        37: invokespecial #11                 // Method com/janetfilter/plugins/power/GoForFreeTransformer."<init>":(Ljava/util/List;)V
+        40: invokeinterface #9,  2            // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+        45: pop
+        46: return
+
+  public java.lang.String getName();
+    descriptor: ()Ljava/lang/String;
+    Code:
+         0: ldc           #12                 // String Power
+         2: areturn
+
+  public java.lang.String getAuthor();
+    descriptor: ()Ljava/lang/String;
+    Code:
+         0: ldc           #13                 // String neo
+         2: areturn
+
+  public java.lang.String getVersion();
+    descriptor: ()Ljava/lang/String;
+    Code:
+         0: ldc           #14                 // String v1.1.0
+         2: areturn
+
+  public java.lang.String getDescription();
+    descriptor: ()Ljava/lang/String;
+    Code:
+         0: ldc           #15                 // String A plugin for the ja-netfilter, it is a dragon slayer for asymmetric encryption.
+         2: areturn
+
+  public java.util.List<com.janetfilter.core.plugin.MyTransformer> getTransformers();
+    descriptor: ()Ljava/util/List;
+    Code:
+         0: aload_0
+         1: getfield      #4                  // Field transformers:Ljava/util/List;
+         4: areturn
+}
+Compiled from "GoForFreeFilter.java"
+public class com.janetfilter.plugins.power.GoForFreeFilter {
+  public com.janetfilter.plugins.power.GoForFreeFilter();
+    descriptor: ()V
+    Code:
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+
+  public static java.lang.String testFilter(java.lang.String);
+    descriptor: (Ljava/lang/String;)Ljava/lang/String;
+    Code:
+         0: aload_0
+         1: ldc           #2                  // String 2023-07-01
+         3: invokevirtual #3                  // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+         6: ifeq          12
+         9: ldc           #4                  // String 2099-12-31
+        11: areturn
+        12: aload_0
+        13: areturn
+}
+Compiled from "GoForFreeTransformer.java"
+public class com.janetfilter.plugins.power.GoForFreeTransformer implements com.janetfilter.core.plugin.MyTransformer {
+  public com.janetfilter.plugins.power.GoForFreeTransformer(java.util.List<com.janetfilter.core.models.FilterRule>);
+    descriptor: (Ljava/util/List;)V
+    Code:
+         0: aload_0
+         1: invokespecial #2                  // Method java/lang/Object."<init>":()V
+         4: return
+
+  public java.lang.String getHookClassName();
+    descriptor: ()Ljava/lang/String;
+    Code:
+         0: ldc           #3                  // String java/text/SimpleDateFormat
+         2: areturn
+
+  public byte[] transform(java.lang.String, byte[], int) throws java.lang.Exception;
+    descriptor: (Ljava/lang/String;[BI)[B
+    Code:
+         0: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #5                  // String your yd=lsl, ----------------
+         5: invokevirtual #6                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: new           #7                  // class jdk/internal/org/objectweb/asm/ClassReader
+        11: dup
+        12: aload_2
+        13: invokespecial #8                  // Method jdk/internal/org/objectweb/asm/ClassReader."<init>":([B)V
+        16: astore        4
+        18: new           #9                  // class jdk/internal/org/objectweb/asm/tree/ClassNode
+        21: dup
+        22: ldc           #10                 // int 327680
+        24: invokespecial #11                 // Method jdk/internal/org/objectweb/asm/tree/ClassNode."<init>":(I)V
+        27: astore        5
+        29: aload         4
+        31: aload         5
+        33: iconst_0
+        34: invokevirtual #12                 // Method jdk/internal/org/objectweb/asm/ClassReader.accept:(Ljdk/internal/org/objectweb/asm/ClassVisitor;I)V
+        37: aload         5
+        39: getfield      #13                 // Field jdk/internal/org/objectweb/asm/tree/ClassNode.methods:Ljava/util/List;
+        42: invokeinterface #14,  1           // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+        47: astore        6
+        49: aload         6
+        51: invokeinterface #15,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+        56: ifeq          169
+        59: aload         6
+        61: invokeinterface #16,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+        66: checkcast     #17                 // class jdk/internal/org/objectweb/asm/tree/MethodNode
+        69: astore        7
+        71: ldc           #18                 // String parse
+        73: aload         7
+        75: getfield      #19                 // Field jdk/internal/org/objectweb/asm/tree/MethodNode.name:Ljava/lang/String;
+        78: invokevirtual #20                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        81: ifeq          166
+        84: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        87: aload         7
+        89: getfield      #21                 // Field jdk/internal/org/objectweb/asm/tree/MethodNode.desc:Ljava/lang/String;
+        92: invokevirtual #6                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        95: new           #22                 // class jdk/internal/org/objectweb/asm/tree/InsnList
+        98: dup
+        99: invokespecial #23                 // Method jdk/internal/org/objectweb/asm/tree/InsnList."<init>":()V
+       102: astore        8
+       104: aload         8
+       106: new           #24                 // class jdk/internal/org/objectweb/asm/tree/VarInsnNode
+       109: dup
+       110: bipush        25
+       112: iconst_1
+       113: invokespecial #25                 // Method jdk/internal/org/objectweb/asm/tree/VarInsnNode."<init>":(II)V
+       116: invokevirtual #26                 // Method jdk/internal/org/objectweb/asm/tree/InsnList.add:(Ljdk/internal/org/objectweb/asm/tree/AbstractInsnNode;)V
+       119: aload         8
+       121: new           #27                 // class jdk/internal/org/objectweb/asm/tree/MethodInsnNode
+       124: dup
+       125: sipush        184
+       128: ldc           #28                 // String com/janetfilter/plugins/power/GoForFreeFilter
+       130: ldc           #29                 // String testFilter
+       132: ldc           #30                 // String (Ljava/lang/String;)Ljava/lang/String;
+       134: iconst_0
+       135: invokespecial #31                 // Method jdk/internal/org/objectweb/asm/tree/MethodInsnNode."<init>":(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+       138: invokevirtual #26                 // Method jdk/internal/org/objectweb/asm/tree/InsnList.add:(Ljdk/internal/org/objectweb/asm/tree/AbstractInsnNode;)V
+       141: aload         8
+       143: new           #24                 // class jdk/internal/org/objectweb/asm/tree/VarInsnNode
+       146: dup
+       147: bipush        58
+       149: iconst_1
+       150: invokespecial #25                 // Method jdk/internal/org/objectweb/asm/tree/VarInsnNode."<init>":(II)V
+       153: invokevirtual #26                 // Method jdk/internal/org/objectweb/asm/tree/InsnList.add:(Ljdk/internal/org/objectweb/asm/tree/AbstractInsnNode;)V
+       156: aload         7
+       158: getfield      #32                 // Field jdk/internal/org/objectweb/asm/tree/MethodNode.instructions:Ljdk/internal/org/objectweb/asm/tree/InsnList;
+       161: aload         8
+       163: invokevirtual #33                 // Method jdk/internal/org/objectweb/asm/tree/InsnList.insert:(Ljdk/internal/org/objectweb/asm/tree/InsnList;)V
+       166: goto          49
+       169: new           #34                 // class jdk/internal/org/objectweb/asm/ClassWriter
+       172: dup
+       173: iconst_3
+       174: invokespecial #35                 // Method jdk/internal/org/objectweb/asm/ClassWriter."<init>":(I)V
+       177: astore        6
+       179: aload         5
+       181: aload         6
+       183: invokevirtual #36                 // Method jdk/internal/org/objectweb/asm/tree/ClassNode.accept:(Ljdk/internal/org/objectweb/asm/ClassVisitor;)V
+       186: aload         6
+       188: invokevirtual #37                 // Method jdk/internal/org/objectweb/asm/ClassWriter.toByteArray:()[B
+       191: areturn
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "path": "active-agt.jar",
+    "bytes": 48639,
+    "sha256": "3acc4e9d91793f6909458a4761b75b6da45c8868e75dca33c9fec63659202995"
+  },
+  {
+    "path": "clion.key",
+    "bytes": 5576,
+    "sha256": "231d37a25c0634946849b5db717fdd41b37e41f284c58580981e330828c4ff4c"
+  },
+  {
+    "path": "clion64.exe.vmoptions",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "CLion激活.vbs",
+    "bytes": 2815,
+    "sha256": "0b794ba1241f122456fa9c91882d3c1b30c52a895c4525a0095634386256dedf"
+  },
+  {
+    "path": "config/dns.conf",
+    "bytes": 67,
+    "sha256": "f098e501d16f260fc7fced68935bb63e52bddb660da3170edb5bc5026d6145c4"
+  },
+  {
+    "path": "config/power.conf",
+    "bytes": 7487,
+    "sha256": "5314860eae776e150d88f7869ccaa0d21ed281430cbf6de38a49358eb0f7b625"
+  },
+  {
+    "path": "config/url.conf",
+    "bytes": 74,
+    "sha256": "88e1dca8019ad412cf2c6fbd947a83786cffc7b32f1ee35594d25d1f38fae5f8"
+  },
+  {
+    "path": "datagrip.key",
+    "bytes": 5344,
+    "sha256": "c513b5d364423ecadd9d3f8869aaa098c34a4500001c0acbda6980989233457a"
+  },
+  {
+    "path": "datagrip64.exe.vmoptions",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "DataGrip激活.vbs",
+    "bytes": 2822,
+    "sha256": "406f9bb94a5a75803ba8be4117ebe6070714924e1e2de2b7dd9dcac08e511a8b"
+  },
+  {
+    "path": "dataspell.key",
+    "bytes": 5128,
+    "sha256": "f19d20fd0059a6e600922c44f4cd2f9db705bb52d5045f49080600f424443df4"
+  },
+  {
+    "path": "dataspell64.exe.vmoptions",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "DataSpell激活.vbs",
+    "bytes": 2825,
+    "sha256": "9a0297091c112d7e2b5c2fb3f45219ed482149c889a13fcf80a15672a4b721dc"
+  },
+  {
+    "path": "goland.key",
+    "bytes": 5576,
+    "sha256": "0867f6987f9686d53047c6e282ea1b7beab30d526be724710e3ad84b5a04cd49"
+  },
+  {
+    "path": "goland64.exe.vmoptions",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "GoLand激活.vbs",
+    "bytes": 2816,
+    "sha256": "aefa257c29b187b589d3bd9612838b0de1cb36b1de5a9e380ec8c5824cbe024a"
+  },
+  {
+    "path": "idea.key",
+    "bytes": 6680,
+    "sha256": "688021363a39fd5bf77bc210d4e209359cb57ae8263b9f724adc036464603b54"
+  },
+  {
+    "path": "idea64.exe.vmoptions",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "IDEA激活.vbs",
+    "bytes": 2818,
+    "sha256": "1c01417c76f091c454d8dba83c4ff3d13128688f64e6e3fa6fac1dc0a9848604"
+  },
+  {
+    "path": "phpstorm.key",
+    "bytes": 5576,
+    "sha256": "ec724bae22d104665f83f055e5971ab5ea4cd309a39f534803dc97c1fd744975"
+  },
+  {
+    "path": "phpstorm64.exe.vmoptions",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "PhpStorm激活.vbs",
+    "bytes": 2822,
+    "sha256": "79299ef3fb6d38a3389a7fcd985ad0fecd0f3f3805d6a93ea480ed49ea2acab9"
+  },
+  {
+    "path": "plugins/dns.jar",
+    "bytes": 4859,
+    "sha256": "d1150b1831b112b93d74a34a10ce6c11606e0d2255d532c29f91f1d92b40a552"
+  },
+  {
+    "path": "plugins/hideme.jar",
+    "bytes": 7209,
+    "sha256": "fa14c735ab9fed3f3a5df0dc78a5d38ae0a146099ddc858197e9f528bd996c40"
+  },
+  {
+    "path": "plugins/power.jar",
+    "bytes": 11732,
+    "sha256": "26db4a54482189dc989e59734318d5c12d656183d5394fe3c0fe5b33313cb785"
+  },
+  {
+    "path": "plugins/url.jar",
+    "bytes": 4529,
+    "sha256": "ce5a83aee31153cca30274ac94467b316edea8cb28acf72f52f5a72d455b1b43"
+  },
+  {
+    "path": "pycharm.key",
+    "bytes": 5576,
+    "sha256": "18f78c8fc649c9c0204dfa2f1944c7350dde1c47d49a2d5f63efd286a5fbc744"
+  },
+  {
+    "path": "pycharm64.exe.vmoptions",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "PyCharm激活.vbs",
+    "bytes": 2819,
+    "sha256": "766b6d727d92ec5a337de110259ef7b80119f29063db6f65a1fd58fc85e97482"
+  },
+  {
+    "path": "rider.key",
+    "bytes": 5352,
+    "sha256": "fab16ee3e5dbc54f5d5d80d8170c8c2f4e17d6d087cef84219605278156abb62"
+  },
+  {
+    "path": "rider64.exe.vmoptions",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "Rider激活.vbs",
+    "bytes": 2813,
+    "sha256": "1067f62bfddca05e8cd4f83afa56b70da54213c8c5485239c8ac6e8b502606c4"
+  },
+  {
+    "path": "webstorm.key",
+    "bytes": 5352,
+    "sha256": "d5f76319c48410c55b36aac223d78a324330caaabd82df9cad67ca40e79cc66c"
+  },
+  {
+    "path": "webstorm64.exe.vmoptions",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "WebStorm激活.vbs",
+    "bytes": 2822,
+    "sha256": "7f7a567ad39328bafc746b2ad63ff8675fd125e2dde93461ef65f7b2e3fa51a8"
+  },
+  {
+    "path": "删除激活.txt",
+    "bytes": 203,
+    "sha256": "eccd2224e76937106998573a5b02a8cc6a92942904d7ebf78cf5c56827b51145"
+  }
+]

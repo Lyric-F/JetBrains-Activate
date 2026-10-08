@@ -1,0 +1,17 @@
+{
+  "command": [
+    "D:\\Java\\jdk-25.0.4.1\\bin\\javac.exe",
+    "-J-Duser.language=en",
+    "-J-Duser.country=US",
+    "@D:\\Project\\unlock\\activate-source\\reports\\compile-check-jbr21\\javac.args"
+  ],
+  "exit_code": 0,
+  "compiler": "JDK 25.0.4.1",
+  "system_modules": "JetBrains Runtime 21.0.8",
+  "source_count": 48,
+  "compiled_class_count": 53,
+  "target_bytecode": 21,
+  "source_modified": false,
+  "target_code_executed": false,
+  "runtime_behavior_verified": false
+}

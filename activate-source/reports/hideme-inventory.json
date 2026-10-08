@@ -1,0 +1,48 @@
+{
+  "module": "hideme",
+  "input_jar": "plugins/hideme.jar",
+  "jar_sha256": "fa14c735ab9fed3f3a5df0dc78a5d38ae0a146099ddc858197e9f528bd996c40",
+  "class_count": 5,
+  "class_major_versions": [
+    52
+  ],
+  "java_file_count": 5,
+  "classes": [
+    "com/janetfilter/plugins/hideme/ClassNameFilter.class",
+    "com/janetfilter/plugins/hideme/ClassNameTransformer.class",
+    "com/janetfilter/plugins/hideme/HideMePlugin.class",
+    "com/janetfilter/plugins/hideme/VMTransformer.class",
+    "com/janetfilter/plugins/hideme/VmArgumentFilter.class"
+  ],
+  "java_files": [
+    "com/janetfilter/plugins/hideme/ClassNameFilter.java",
+    "com/janetfilter/plugins/hideme/ClassNameTransformer.java",
+    "com/janetfilter/plugins/hideme/HideMePlugin.java",
+    "com/janetfilter/plugins/hideme/VMTransformer.java",
+    "com/janetfilter/plugins/hideme/VmArgumentFilter.java"
+  ],
+  "class_to_source": {
+    "com/janetfilter/plugins/hideme/ClassNameFilter.class": "com/janetfilter/plugins/hideme/ClassNameFilter.java",
+    "com/janetfilter/plugins/hideme/ClassNameTransformer.class": "com/janetfilter/plugins/hideme/ClassNameTransformer.java",
+    "com/janetfilter/plugins/hideme/HideMePlugin.class": "com/janetfilter/plugins/hideme/HideMePlugin.java",
+    "com/janetfilter/plugins/hideme/VMTransformer.class": "com/janetfilter/plugins/hideme/VMTransformer.java",
+    "com/janetfilter/plugins/hideme/VmArgumentFilter.class": "com/janetfilter/plugins/hideme/VmArgumentFilter.java"
+  },
+  "resources": [
+    "META-INF/MANIFEST.MF"
+  ],
+  "cfr_exit_code": 0,
+  "missing_source_mappings": [],
+  "command": [
+    "java",
+    "-jar",
+    "D:\\Project\\unlock\\activate-source\\tools\\cfr-0.152.jar",
+    "D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar",
+    "--outputdir",
+    "D:\\Project\\unlock\\activate-source\\modules\\hideme\\src\\main\\java",
+    "--extraclasspath",
+    "D:\\Project\\unlock\\activate-source\\original-package\\active-agt.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\url.jar",
+    "--silent",
+    "true"
+  ]
+}

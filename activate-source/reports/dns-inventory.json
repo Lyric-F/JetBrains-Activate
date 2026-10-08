@@ -1,0 +1,42 @@
+{
+  "module": "dns",
+  "input_jar": "plugins/dns.jar",
+  "jar_sha256": "d1150b1831b112b93d74a34a10ce6c11606e0d2255d532c29f91f1d92b40a552",
+  "class_count": 3,
+  "class_major_versions": [
+    52
+  ],
+  "java_file_count": 3,
+  "classes": [
+    "com/janetfilter/plugins/dns/DNSFilter.class",
+    "com/janetfilter/plugins/dns/DNSFilterPlugin.class",
+    "com/janetfilter/plugins/dns/InetAddressTransformer.class"
+  ],
+  "java_files": [
+    "com/janetfilter/plugins/dns/DNSFilter.java",
+    "com/janetfilter/plugins/dns/DNSFilterPlugin.java",
+    "com/janetfilter/plugins/dns/InetAddressTransformer.java"
+  ],
+  "class_to_source": {
+    "com/janetfilter/plugins/dns/DNSFilter.class": "com/janetfilter/plugins/dns/DNSFilter.java",
+    "com/janetfilter/plugins/dns/DNSFilterPlugin.class": "com/janetfilter/plugins/dns/DNSFilterPlugin.java",
+    "com/janetfilter/plugins/dns/InetAddressTransformer.class": "com/janetfilter/plugins/dns/InetAddressTransformer.java"
+  },
+  "resources": [
+    "META-INF/MANIFEST.MF"
+  ],
+  "cfr_exit_code": 0,
+  "missing_source_mappings": [],
+  "command": [
+    "java",
+    "-jar",
+    "D:\\Project\\unlock\\activate-source\\tools\\cfr-0.152.jar",
+    "D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar",
+    "--outputdir",
+    "D:\\Project\\unlock\\activate-source\\modules\\dns\\src\\main\\java",
+    "--extraclasspath",
+    "D:\\Project\\unlock\\activate-source\\original-package\\active-agt.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\dns.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\hideme.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\power.jar;D:\\Project\\unlock\\activate-source\\original-package\\plugins\\url.jar",
+    "--silent",
+    "true"
+  ]
+}

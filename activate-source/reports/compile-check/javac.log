@@ -1,0 +1,356 @@
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:24: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassReader;
+                                     ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:25: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassVisitor;
+                                     ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:26: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassWriter;
+                                     ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:27: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:28: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.ClassNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:29: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnList;
+                                          ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:30: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:31: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:32: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.LabelNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:33: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:34: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:35: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.VarInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\ClassNameTransformer.java:18: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassReader;
+                                     ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\ClassNameTransformer.java:19: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassVisitor;
+                                     ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\ClassNameTransformer.java:20: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassWriter;
+                                     ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\ClassNameTransformer.java:21: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\ClassNameTransformer.java:22: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.ClassNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\ClassNameTransformer.java:23: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnList;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\ClassNameTransformer.java:24: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\ClassNameTransformer.java:25: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\ClassNameTransformer.java:26: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.VarInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:21: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassReader;
+                                     ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:22: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassVisitor;
+                                     ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:23: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassWriter;
+                                     ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:24: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:25: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.ClassNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:26: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.FieldInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:27: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnList;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:28: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:29: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\hideme\src\main\java\com\janetfilter\plugins\hideme\VMTransformer.java:30: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.VarInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:24: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassReader;
+                                     ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:25: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassVisitor;
+                                     ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:26: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassWriter;
+                                     ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:27: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:28: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.ClassNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:29: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnList;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:30: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:31: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:32: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.LabelNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:33: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:34: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ArgsTransformer.java:35: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.VarInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\GoForFreeTransformer.java:20: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassReader;
+                                     ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\GoForFreeTransformer.java:21: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassVisitor;
+                                     ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\GoForFreeTransformer.java:22: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassWriter;
+                                     ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\GoForFreeTransformer.java:23: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\GoForFreeTransformer.java:24: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.ClassNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\GoForFreeTransformer.java:25: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnList;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\GoForFreeTransformer.java:26: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\GoForFreeTransformer.java:27: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\GoForFreeTransformer.java:28: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.VarInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:24: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassReader;
+                                     ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:25: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassVisitor;
+                                     ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:26: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassWriter;
+                                     ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:27: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:28: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.ClassNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:29: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnList;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:30: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:31: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.JumpInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:32: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.LabelNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:33: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:34: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\power\src\main\java\com\janetfilter\plugins\power\ResultTransformer.java:35: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.VarInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:23: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassReader;
+                                     ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:24: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassVisitor;
+                                     ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:25: error: package jdk.internal.org.objectweb.asm does not exist
+import jdk.internal.org.objectweb.asm.ClassWriter;
+                                     ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:26: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.AbstractInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:27: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.ClassNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:28: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.FieldInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:29: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnList;
+                                          ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:30: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.InsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:31: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:32: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.MethodNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\url\src\main\java\com\janetfilter\plugins\url\HttpClientTransformer.java:33: error: package jdk.internal.org.objectweb.asm.tree does not exist
+import jdk.internal.org.objectweb.asm.tree.VarInsnNode;
+                                          ^
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:53: error: cannot find symbol
+        ClassReader reader = new ClassReader(classBytes);
+        ^
+  symbol:   class ClassReader
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:53: error: cannot find symbol
+        ClassReader reader = new ClassReader(classBytes);
+                                 ^
+  symbol:   class ClassReader
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:54: error: cannot find symbol
+        ClassNode node = new ClassNode(327680);
+        ^
+  symbol:   class ClassNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:54: error: cannot find symbol
+        ClassNode node = new ClassNode(327680);
+                             ^
+  symbol:   class ClassNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:55: error: cannot find symbol
+        reader.accept((ClassVisitor)node, 0);
+                       ^
+  symbol:   class ClassVisitor
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:56: error: cannot find symbol
+        for (MethodNode m : node.methods) {
+             ^
+  symbol:   class MethodNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:57: error: cannot find symbol
+            InsnList list;
+            ^
+  symbol:   class InsnList
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:59: error: cannot find symbol
+                list = new InsnList();
+                           ^
+  symbol:   class InsnList
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:60: error: cannot find symbol
+                list.add((AbstractInsnNode)new VarInsnNode(25, 0));
+                          ^
+  symbol:   class AbstractInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:60: error: cannot find symbol
+                list.add((AbstractInsnNode)new VarInsnNode(25, 0));
+                                               ^
+  symbol:   class VarInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:61: error: cannot find symbol
+                list.add((AbstractInsnNode)new MethodInsnNode(184, "com/janetfilter/plugins/dns/DNSFilter", "testQuery", "(Ljava/lang/String;)Ljava/lang/String;", false));
+                          ^
+  symbol:   class AbstractInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:61: error: cannot find symbol
+                list.add((AbstractInsnNode)new MethodInsnNode(184, "com/janetfilter/plugins/dns/DNSFilter", "testQuery", "(Ljava/lang/String;)Ljava/lang/String;", false));
+                                               ^
+  symbol:   class MethodInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:62: error: cannot find symbol
+                list.add((AbstractInsnNode)new InsnNode(87));
+                          ^
+  symbol:   class AbstractInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:62: error: cannot find symbol
+                list.add((AbstractInsnNode)new InsnNode(87));
+                                               ^
+  symbol:   class InsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:67: error: cannot find symbol
+            list = new InsnList();
+                       ^
+  symbol:   class InsnList
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:68: error: cannot find symbol
+            list.add((AbstractInsnNode)new VarInsnNode(25, 0));
+                      ^
+  symbol:   class AbstractInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:68: error: cannot find symbol
+            list.add((AbstractInsnNode)new VarInsnNode(25, 0));
+                                           ^
+  symbol:   class VarInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:69: error: cannot find symbol
+            list.add((AbstractInsnNode)new MethodInsnNode(184, "com/janetfilter/plugins/dns/DNSFilter", "testReachable", "(Ljava/net/InetAddress;)Ljava/lang/Object;", false));
+                      ^
+  symbol:   class AbstractInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:69: error: cannot find symbol
+            list.add((AbstractInsnNode)new MethodInsnNode(184, "com/janetfilter/plugins/dns/DNSFilter", "testReachable", "(Ljava/net/InetAddress;)Ljava/lang/Object;", false));
+                                           ^
+  symbol:   class MethodInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:70: error: cannot find symbol
+            list.add((AbstractInsnNode)new VarInsnNode(58, 4));
+                      ^
+  symbol:   class AbstractInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:70: error: cannot find symbol
+            list.add((AbstractInsnNode)new VarInsnNode(58, 4));
+                                           ^
+  symbol:   class VarInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:71: error: cannot find symbol
+            list.add((AbstractInsnNode)new InsnNode(1));
+                      ^
+  symbol:   class AbstractInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:71: error: cannot find symbol
+            list.add((AbstractInsnNode)new InsnNode(1));
+                                           ^
+  symbol:   class InsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:72: error: cannot find symbol
+            list.add((AbstractInsnNode)new VarInsnNode(25, 4));
+                      ^
+  symbol:   class AbstractInsnNode
+  location: class InetAddressTransformer
+D:\Project\unlock\activate-source\modules\dns\src\main\java\com\janetfilter\plugins\dns\InetAddressTransformer.java:72: error: cannot find symbol
+            list.add((AbstractInsnNode)new VarInsnNode(25, 4));
+                                           ^
+  symbol:   class VarInsnNode
+  location: class InetAddressTransformer
+Note: D:\Project\unlock\activate-source\modules\core\src\main\java\com\janetfilter\core\plugin\PluginManager.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+100 errors
+only showing the first 100 errors, of 265 total; use -Xmaxerrs if you would like to see more

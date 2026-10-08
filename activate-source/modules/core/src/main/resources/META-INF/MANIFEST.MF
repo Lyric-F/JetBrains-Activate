@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Premain-Class: com.janetfilter.core.Launcher
+Built-By: neo
+Agent-Class: com.janetfilter.core.Launcher
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+Can-Set-Native-Method-Prefix: true
+Created-By: Apache Maven 3.5.3
+Build-Jdk: 1.8.0_261
+Main-Class: com.janetfilter.core.Launcher
+
